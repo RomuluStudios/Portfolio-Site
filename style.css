@@ -14,6 +14,7 @@ body {
 }
 
 /* ================= NAV ================= */
+
 .nav {
     position: fixed;
     top: 0;
@@ -31,6 +32,7 @@ body {
 }
 
 /* MENU */
+
 .menu {
     position: absolute;
     top: 3.7rem;
@@ -71,6 +73,7 @@ body {
         }
 
 /* ================= HERO ================= */
+
 .hero {
     position: relative;
     width: 100%;
@@ -82,6 +85,7 @@ body {
 }
 
 /* ================= COLLAGE ================= */
+
 .collage {
     position: absolute;
     inset: 0;
@@ -98,21 +102,18 @@ body {
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
-    opacity: 1;
 }
 
 .i1 {
     top: -15%;
     left: -8%;
     transform: rotate(-11deg);
-    z-index: 1;
 }
 
 .i2 {
     top: -30%;
     left: 18%;
     transform: rotate(-12deg);
-    z-index: -1;
 }
 
 .i3 {
@@ -125,14 +126,12 @@ body {
     top: 45%;
     left: -1%;
     transform: rotate(10deg);
-    z-index: 1;
 }
 
 .i5 {
     top: 15%;
     left: 35%;
     transform: rotate(-8deg);
-    z-index: 3;
 }
 
 .i6 {
@@ -151,10 +150,10 @@ body {
     top: 32%;
     left: 70%;
     transform: rotate(8deg);
-    z-index: 2;
 }
 
 /* ================= HERO TEXT ================= */
+
 .hero-text {
     position: relative;
     z-index: 10;
@@ -171,8 +170,7 @@ body {
     -webkit-backdrop-filter: blur(48px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 15px;
-    padding: 0.5rem 0.5rem;
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
+    padding: 0.5rem;
     max-width: 650px;
     margin: 0 auto;
 }
@@ -195,43 +193,95 @@ body {
 }
 
 /* ================= SECTIONS ================= */
+
 section {
+    width: 100%;
     padding: 4rem 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
-/* ================= PROJECT LAYOUT (NEW) ================= */
+/* CONTENT WRAPPER */
+
+.container {
+    max-width: 1100px;
+    margin: 0;
+}
+
+/* ================= PROJECT / ABOUT LAYOUT ================= */
 
 .project {
     display: flex;
     gap: 24px;
     align-items: stretch;
-    margin-top: 20px;
+    width: 100%;
 }
 
-/* LEFT SIDE (image container) */
-.project-img {
-    width: 520px;
-    align-self: stretch; /* forces it to match height */
+/* ABOUT IMAGE */
+
+.about-img {
+    width: 320px;
+    flex-shrink: 0;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-    display: block;
 }
 
-/* RIGHT SIDE (text container) */
+/* PROJECT IMAGE */
+
+.project-img {
+    width: 320px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* TEXT SIDE */
+
 .project-info {
     flex: 1;
 }
 
+    /* LINKS */
+
+    .project-info a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+        .project-info a:hover {
+            text-decoration: underline;
+        }
+
+    /* LISTS */
+
+    .project-info ul {
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+    }
+
 /* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
+
     .project {
         flex-direction: column;
     }
 
-    .project-img {
+    .project-img,
+    .about-img {
         width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p:first-of-type {
+        font-size: 1.1rem;
+    }
+
+    .hero em {
+        font-size: 0.95rem;
     }
 }

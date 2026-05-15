@@ -53,16 +53,26 @@
 
                 <div class="project-info">
 
-                    <h3>GradePilot</h3>
+                    <h3>GradePilot - Intelligent Academic Priority System (V1.0 Test Build)</h3>
+
                     <p>
                         <a href="https://github.com/RomuluStudios/GradePilot">Link To Github Repo</a>
                     </p>
+
                     <img src="Assets/gradepilot.jpg"
                          alt="GradePilot Preview"
                          class="project-img">
 
                     <p>
-                       <br> GradePilot is more than just a student planner. The core idea behind this project is to remove the stress of due dates, assist in planning what to work on and make students lives easier through a smart, adaptive Priority Engine.
+                        GradePilot is a task prioritization system designed to help students manage academic workload across multiple courses, deadlines, and time constraints.
+
+                        Instead of presenting users with a static to-do list, the system builds a structured model of a student’s week using work schedules, class timetables, assignments, due dates, estimated effort, and self-reported difficulty levels.
+
+                        At the core of the application is a priority engine that evaluates each task using multiple weighted factors, including urgency, academic impact, workload size, available time, and course risk. It also considers real-world constraints such as overlapping commitments, free time distribution, and task completion feasibility within upcoming deadlines.
+
+                        The result is a ranked set of recommendations that dynamically adjusts based on what the student can realistically accomplish. Each recommendation includes a clear action, supporting reasoning, and an estimated time allocation for the current day.
+
+                        To reduce cognitive overload, the interface separates immediate focus (“Do This Now”) from secondary recommendations, allowing users to either act immediately or explore deeper breakdowns of how each recommendation was generated.
                     </p>
 
                     <h3>Feature Walkthrough</h3>
@@ -91,23 +101,76 @@
                         </p>
 
                         <div class="image-row">
-                            <img src="Assets/classSchedule.jpg">
-                            <img src="Assets/oneOff.jpg">
+                            <img src="Assets/classSchedule.jpg" alt="Class Schedule">
+                            <img src="Assets/oneOff.jpg" alt="One Off Appointment">
                         </div>
 
-                        <h4><br>Importing Courses</h4>
+                        <h4>Importing Courses</h4>
 
                         <p>
-                            Users are able to upload course CSI documents, and autofill course information such as grading categories (assignments, labs, etc.) 
-                            as well as the specific items within those categories. This uses Paddle OCR through a cloud based server, and uploaded images are 
-                            deleted after parsing and user confirmation.
-                            <br> This allows users to ensure OCR accuracy before importing information, in addition to the ability to edit courses themselves from
-                            the course screen.
+                            Users are able to upload course CSI documents, and autofill course information such as grading categories (assignments, labs, etc.) as well as the specific items within those categories. This uses Paddle OCR through a cloud based server, and uploaded images are deleted after parsing and user confirmation.
+
+                            This allows users to ensure OCR accuracy before importing information, in addition to the ability to edit courses themselves from the course screen.
                         </p>
+
+                        <div class="image-row">
+                            <img src="Assets/courseImport1.jpg" alt="Course Import 1">
+                            <img src="Assets/courseImport2.jpg" alt="Course Import 2">
+                            <img src="Assets/courseImport3.jpg" alt="Course Import 3">
+                        </div>
+
+                        <h4>Course Editing</h4>
+
+                        <p>
+                            The course screen allows users to edit assignments, categories or entire courses. Users are able to add/update due dates, their estimated difficulty of the assignments, as well as their estimated time to completion. Courses are sorted by semester, allowing easy navigation if users utilize GradePilot across multiple semesters.
+                        </p>
+
+                        <div class="image-row">
+                            <img src="Assets/courseScreen1.jpg" alt="Course Screen 1">
+                            <img src="Assets/courseScreen2.jpg" alt="Course Screen 2">
+                        </div>
+
+                        <h4>Priority Engine (Home Screen)</h4>
+
+                        <p>
+                            The Priority Engine is the core system that determines what a student should work on at any given time. It builds a structured model of workload using course schedules, work shifts, class timetables, assignments, due dates, estimated completion time, and difficulty ratings, combining everything into a unified view of time and obligations.
+                        </p>
+
+                        <p>
+                            Each task is evaluated using multiple weighted factors:
+                        </p>
+
+                        <ul>
+                            <li>Urgency based on how close the due date is</li>
+                            <li>Academic impact based on assignment weight and course structure</li>
+                            <li>Time feasibility based on available free time before the deadline</li>
+                            <li>Effort size using estimated completion time and difficulty</li>
+                            <li>Course risk based on current grade performance and progression</li>
+                            <li>Workload balance to avoid overloading a single day</li>
+                        </ul>
+
+                        <p>
+                            Instead of relying on a single rule such as due date alone, the engine calculates a combined priority score that reflects both urgency and real-world feasibility. This ensures recommendations are not only important, but actually achievable within the student’s available time.
+                        </p>
+
+                        <p>
+                            The final output is a ranked list of recommendations, including a primary “Do This Now” task and supporting secondary actions. Each recommendation includes a suggested work duration and a reason explaining why it was selected.
+                        </p>
+
+                        <p>
+                            To improve usability, the system applies safeguards that prevent unrealistic scheduling, such as overloading a single day, prioritizing tasks without enough context, or ignoring limited available time.
+                        </p>
+
+                        <div class="image-row">
+                            <img src="Assets/priority1.jpg" alt="Priority 1">
+                            <img src="Assets/priority2.jpg" alt="Priority 2">
+                            <img src="Assets/priority3.jpg" alt="Priority 3">
+                        </div>
 
                     </div>
 
                 </div>
+            </div>
 
         </div>
     </section>

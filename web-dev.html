@@ -10,6 +10,7 @@
 
     <nav class="nav">
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+
         <div class="menu" id="menu">
             <a href="index.html">Homepage</a>
             <a href="resume.html">Resume</a>
@@ -19,14 +20,99 @@
         </div>
     </nav>
 
-    <header><h1>Web Development Projects</h1></header>
+    <!-- HERO -->
+    <header class="hero">
+
+        <div class="collage">
+            <img src="Assets/img1.jpg" class="img i1" alt="">
+            <img src="Assets/img2.jpg" class="img i2" alt="">
+            <img src="Assets/img3.jpg" class="img i3" alt="">
+            <img src="Assets/img4.jpg" class="img i4" alt="">
+            <img src="Assets/img5.jpg" class="img i5" alt="">
+            <img src="Assets/img6.jpg" class="img i6" alt="">
+            <img src="Assets/img7.jpg" class="img i7" alt="">
+            <img src="Assets/img8.jpg" class="img i8" alt="">
+        </div>
+
+        <div class="hero-text">
+            <div class="glass">
+                <h1>Kirby Marshall</h1>
+                <p>Web Dev Projects</p>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- CONTENT -->
     <section>
-        <div class="project-card">
-            <h3>This Portfolio Website</h3>
-            <p>Modern responsive portfolio with glassmorphism navigation.</p>
+        <div class="container">
+
+            <h2>Featured Web Projects</h2>
+
+            <div class="project">
+
+                <div class="project-info">
+
+                    <h3>GradePilot</h3>
+                    <p>
+                        <a href="https://github.com/RomuluStudios/GradePilot">Link To Github Repo</a>
+                    </p>
+                    <img src="Assets/gradepilot.jpg"
+                         alt="GradePilot Preview"
+                         class="project-img">
+
+                    <p>
+                       <br> GradePilot is more than just a student planner. The core idea behind this project is to remove the stress of due dates, assist in planning what to work on and make students lives easier through a smart, adaptive Priority Engine.
+                    </p>
+
+                    <h3>Feature Walkthrough</h3>
+
+                    <button class="collapse-btn" onclick="toggleCollapse(this)">
+                        <span>Expand / Collapse</span>
+                        <span class="arrow">▼</span>
+                    </button>
+
+                    <div class="collapse-content">
+
+                        <h4>Adding Schedule</h4>
+
+                        <p>
+                            Users are able to add their work schedule, choose its frequency (weekly, bi-weekly or monthly) and choose whether that is a permanent or changing schedule.
+                        </p>
+
+                        <div class="image-row">
+                            <img src="Assets/workSchedule1.jpg" alt="Work Schedule 1">
+                            <img src="Assets/workSchedule2.jpg" alt="Work Schedule 2">
+                            <img src="Assets/workSchedule3.jpg" alt="Work Schedule 3">
+                        </div>
+
+                        <p>
+                           <br> In addition to the users work schedule, they can also add their class schedule as well as any one-off appointments they have.
+                        </p>
+
+                        <div class="image-row">
+                            <img src="Assets/classSchedule.jpg">
+                            <img src="Assets/oneOff.jpg">
+                        </div>
+
+                        <h4><br>Importing Courses</h4>
+
+                        <p>
+                            Users are able to upload course CSI documents, and autofill course information such as grading categories (assignments, labs, etc.) 
+                            as well as the specific items within those categories. This uses Paddle OCR through a cloud based server, and uploaded images are 
+                            deleted after parsing and user confirmation.
+                            <br> This allows users to ensure OCR accuracy before importing information, in addition to the ability to edit courses themselves from
+                            the course screen.
+                        </p>
+
+                    </div>
+
+                </div>
+
         </div>
     </section>
 
     <script src="script.js"></script>
+
 </body>
 </html>

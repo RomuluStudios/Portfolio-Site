@@ -38,3 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     highlightCurrentPage();
 });
+
+function toggleCollapse(btn) {
+    const content = btn.nextElementSibling;
+
+    btn.classList.toggle("active");
+    content.classList.toggle("open");
+}

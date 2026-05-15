@@ -126,6 +126,7 @@ body {
     top: 15%;
     left: 35%;
     transform: rotate(-8deg);
+    z-index: 1;
 }
 
 .i6 {

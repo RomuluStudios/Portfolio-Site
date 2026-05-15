@@ -31,7 +31,7 @@ body {
     cursor: pointer;
 }
 
-/* MENU */
+/* ================= MENU ================= */
 
 .menu {
     position: absolute;
@@ -173,6 +173,7 @@ body {
     padding: 0.5rem;
     max-width: 650px;
     margin: 0 auto;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7);
 }
 
 .hero h1 {
@@ -199,11 +200,12 @@ section {
     padding: 4rem 2rem;
 }
 
-/* CONTENT WRAPPER */
+/* ================= CONTENT WRAPPER ================= */
 
 .container {
     max-width: 1100px;
-    margin: 0;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* ================= PROJECT / ABOUT LAYOUT ================= */
@@ -215,7 +217,7 @@ section {
     width: 100%;
 }
 
-/* ABOUT IMAGE */
+/* ================= ABOUT IMAGE ================= */
 
 .about-img {
     width: 320px;
@@ -225,7 +227,7 @@ section {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* PROJECT IMAGE */
+/* ================= PROJECT IMAGE ================= */
 
 .project-img {
     width: 320px;
@@ -235,13 +237,13 @@ section {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* TEXT SIDE */
+/* ================= TEXT SIDE ================= */
 
 .project-info {
     flex: 1;
 }
 
-    /* LINKS */
+    /* ================= LINKS ================= */
 
     .project-info a {
         color: white;
@@ -253,7 +255,7 @@ section {
             text-decoration: underline;
         }
 
-    /* LISTS */
+    /* ================= LISTS ================= */
 
     .project-info ul {
         margin-top: 1rem;

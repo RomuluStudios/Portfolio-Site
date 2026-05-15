@@ -10,6 +10,7 @@
 
     <nav class="nav">
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+
         <div class="menu" id="menu">
             <a href="index.html">Homepage</a>
             <a href="resume.html">Resume</a>
@@ -19,11 +20,61 @@
         </div>
     </nav>
 
-    <header><h1>Contact Me</h1></header>
-    <section>
-        <h2>Get In Touch</h2>
-        <p>Email: your@email.com</p>
+    <!-- HERO -->
+    <header class="hero">
+
+        <div class="collage">
+            <img src="Assets/img1.jpg" class="img i1" alt="">
+            <img src="Assets/img2.jpg" class="img i2" alt="">
+            <img src="Assets/img3.jpg" class="img i3" alt="">
+            <img src="Assets/img4.jpg" class="img i4" alt="">
+            <img src="Assets/img5.jpg" class="img i5" alt="">
+            <img src="Assets/img6.jpg" class="img i6" alt="">
+            <img src="Assets/img7.jpg" class="img i7" alt="">
+            <img src="Assets/img8.jpg" class="img i8" alt="">
+        </div>
+
+        <div class="hero-text">
+            <div class="glass">
+                <h1>Kirby Marshall</h1>
+                <p>Contact Me</p>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- CONTENT -->
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <h2>Business Contact</h2>
+
+            <p>
+                For any business inquiries (Web/Website and Game Development), fill out the form below and I will be in touch with you.
+            </p>
+
+            <form action="https://formspree.io/f/xvzlekwd" method="POST" class="contact-form">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+
+                <input type="email" name="email" placeholder="Your Email" required>
+
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
     </section>
+
+    <div id="successPopup" class="success-popup">
+        <div class="success-box">
+            <div class="checkmark">✔</div>
+            <h3>Message Sent</h3>
+            <p>Your message has been delivered.</p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
